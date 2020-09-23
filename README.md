@@ -1,0 +1,1 @@
+Okay so now I'm writing a brief introduction for what the current project is and what skills I will demonstrate once I have completed it. Right.
