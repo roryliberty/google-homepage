@@ -1,5 +1,6 @@
 <main>
     <style>
+        /* making the page work for centering the Google logo */
         body {
             display: flex;
             flex-direction: column;
@@ -27,7 +28,7 @@
             justify-content: center; 
             /*background: red;*/
             width: 100%;
-            height: 100%;  
+            height: 500px;  
         }
     </style>
         <head></head>
@@ -45,6 +46,11 @@
             <div id="container">
                 <div id="gmail-logo"></div>
                     <img src="http://web.archive.org/web/20191201000239im_/https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+                </div>
+                <div id="search-bar">
+                    <form method="GET" action="https://google.com/search">
+                        <input type="text" name="q" size="31" value="">
+                    </form>
                 </div>
             </div>
         </body>
