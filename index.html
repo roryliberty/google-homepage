@@ -3,17 +3,33 @@
         #navbar {
             background: yellow;
         }
+        #nav-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        #nav-links li a {
+            float: left;
+            padding: 10px;
+        }
+        .nav-right {
+            float: right;
+        }
     </style>
-        <head>
-            <nav id="navbar">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Store</a></li>
-                    <li><a href="#">Gmail</a></li>
-                    <li><a href="#">Images</a></li>
-                    <li><a href="#">Apps</a></li>
-                    <li><input type="submit"></li>
-                </ul>
-            </nav>
-        </head>
+        <head></head>
+        <nav id="navbar">
+            <ul id="nav-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Store</a></li>
+                <li class="nav-right"><input type="submit" style="padding:10px"></li>
+                <li class="nav-right"><a href="#">Apps</a></li>
+                <li class="nav-right"><a href="#">Images</a></li>
+                <li class="nav-right"><a href="#">Gmail</a></li>
+            </ul>
+        </nav>
+        <div id="gmail-logo">
+            <img src="http://web.archive.org/web/20191201000239im_/https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </div>
+        
+        
 </main>
