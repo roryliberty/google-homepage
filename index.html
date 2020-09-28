@@ -1,5 +1,10 @@
 <main>
     <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            /*background: gray;*/
+        }
         #navbar {
             background: yellow;
         }
@@ -7,6 +12,7 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
+            background: green;
         }
         #nav-links li a {
             float: left;
@@ -15,21 +21,32 @@
         .nav-right {
             float: right;
         }
+        #container {
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            /*background: red;*/
+            width: 100%;
+            height: 100%;  
+        }
     </style>
         <head></head>
-        <nav id="navbar">
-            <ul id="nav-links">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Store</a></li>
-                <li class="nav-right"><input type="submit" style="padding:10px"></li>
-                <li class="nav-right"><a href="#">Apps</a></li>
-                <li class="nav-right"><a href="#">Images</a></li>
-                <li class="nav-right"><a href="#">Gmail</a></li>
-            </ul>
-        </nav>
-        <div id="gmail-logo">
-            <img src="http://web.archive.org/web/20191201000239im_/https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-        </div>
-        
+        <body>
+            <nav id="navbar">
+                <ul id="nav-links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li class="nav-right"><input type="submit" style="padding:10px"></li>
+                    <li class="nav-right"><a href="#">Apps</a></li>
+                    <li class="nav-right"><a href="#">Images</a></li>
+                    <li class="nav-right"><a href="#">Gmail</a></li>
+                </ul>
+            </nav>
+            <div id="container">
+                <div id="gmail-logo"></div>
+                    <img src="http://web.archive.org/web/20191201000239im_/https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+                </div>
+            </div>
+        </body>
         
 </main>
