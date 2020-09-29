@@ -1,62 +1,76 @@
-<main>
-    <style>
-        /* making the page work for centering the Google logo */
-        body {
-            display: flex;
-            flex-direction: column;
-            /*background: gray;*/
-        }
-        #navbar {
-            background: yellow;
-        }
-        #nav-links {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            background: green;
-        }
-        #nav-links li a {
-            float: left;
-            padding: 10px;
-        }
-        .nav-right {
-            float: right;
-        }
-        #container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column; 
-            background: red;
-            width: 100%;
-            height: 500px;  
-        }
-        #search-bar {
-            background: blue;
-        }
-    </style>
-        <head></head>
-        <body>
-            <nav id="navbar">
-                <ul id="nav-links">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Store</a></li>
-                    <li class="nav-right"><input type="submit" style="padding:10px"></li>
-                    <li class="nav-right"><a href="#">Apps</a></li>
-                    <li class="nav-right"><a href="#">Images</a></li>
-                    <li class="nav-right"><a href="#">Gmail</a></li>
-                </ul>
-            </nav>
-            <div id="container">
-                <div id="gmail-logo"></div>
-                    <img src="http://web.archive.org/web/20191201000239im_/https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-                </div>
-                <div id="search-bar">
-                    <form method="GET" action="https://google.com/search">
-                        <input type="text" name="q" size="31" value="">
-                    </form>
-                </div>
+<!DOCTYPE html>
+<html lang="en"></html>
+<style>
+/* making the page work for centering the Google logo */
+body {
+    display: flex;
+    flex-direction: column;
+    /*background-color: gray;*/
+}
+#navbar {
+    /*background: yellow;*/
+}
+#nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*background: green;*/
+}
+#nav-links li a {
+    float: left;
+    padding: 10px;
+}
+.nav-right {
+    float: right;
+}
+#container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*background: red;*/
+    width: 100%;
+    height: 500px;
+    margin-bottom: 0px;  
+}
+#search-bar {
+    /*background: blue;*/
+}
+#search {
+    position: absolute;
+    bottom: 25px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 400px;
+    border-radius: 17px;
+}
+</style>
+<body>
+    <head>
+        <nav id="navbar">
+            <ul id="nav-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Store</a></li>
+                <li class="nav-right"><input type="submit" style="padding:10px"></li>
+                <li class="nav-right"><a href="#">Apps</a></li>
+                <li class="nav-right"><a href="#">Images</a></li>
+                <li class="nav-right"><a href="#">Gmail</a></li>
+            </ul>
+        </nav>
+    </head>
+    <main>
+        <div id="container">
+            <div id="google-logo"></div>
+                <img src="http://web.archive.org/web/20191201000239im_/https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
             </div>
-        </body>
-        
-</main>
+            <div id="search-bar">
+                <form> 
+                    <input id="search" type="text">
+                </form>
+            </div>
+        </div>
+    </main>      
+</body>

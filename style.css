@@ -1,0 +1,35 @@
+
+/* making the page work for centering the Google logo */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+}
+#navbar {
+    background: yellow;
+}
+#nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: green;
+}
+#nav-links li a {
+    float: left;
+    padding: 10px;
+}
+.nav-right {
+    float: right;
+}
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    background: red;
+    width: 100%;
+    height: 500px;  
+}
+#search-bar {
+    background: blue;
+}
