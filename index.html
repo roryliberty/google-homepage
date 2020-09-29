@@ -12,9 +12,6 @@
         flex-direction: column;
         /*background-color: gray;*/
     }
-    #navbar {
-        /*background: yellow;*/
-    }
     #nav-links {
         list-style-type: none;
         margin: 0;
@@ -31,24 +28,14 @@
     #container {
         position: relative;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
-        /*background: red;*/
         width: 100%;
         height: 500px;
         margin-bottom: 0px;  
     }
-    #search-bar {
-        /*background: blue;*/
-    }
     #search {
-        /*position: absolute;
-        bottom: 420px;
-        left: 515px;
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;*/
         height: 50px;
         width: 400px;
         border-radius: 17px;
@@ -56,7 +43,11 @@
     #buttons {
         height: 50px;
         width: 400px;
-        padding-bottom: 0;
+        padding-top: 25px;
+        padding-left: 110px;
+    }
+    .button-class {
+        margin: 10px;
     }
 </style>
 <body>
@@ -83,8 +74,8 @@
                 </form>
             </div>
             <div id="buttons">
-                <button id="google-search" type="submit" class="two-buttons">Google Search</button>
-                <button id="im-feeling-lucky" type="submit" class="two-buttons">I'm Feeling Lucky</button>
+                <button id="google-search" type="submit" class="button-class">Google Search</button>
+                <button id="im-feeling-lucky" type="submit" class="button-class">I'm Feeling Lucky</button>
             </div>
         </div>
     </main>      
