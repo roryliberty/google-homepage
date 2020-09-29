@@ -1,53 +1,59 @@
 <!DOCTYPE html>
 <html lang="en"></html>
 <style>
-/* making the page work for centering the Google logo */
-body {
-    display: flex;
-    flex-direction: column;
-    /*background-color: gray;*/
-}
-#navbar {
-    /*background: yellow;*/
-}
-#nav-links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    /*background: green;*/
-}
-#nav-links li a {
-    float: left;
-    padding: 10px;
-}
-.nav-right {
-    float: right;
-}
-#container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    /*background: red;*/
-    width: 100%;
-    height: 500px;
-    margin-bottom: 0px;  
-}
-#search-bar {
-    /*background: blue;*/
-}
-#search {
-    position: absolute;
-    bottom: 420px;
-    left: 515px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    height: 50px;
-    width: 400px;
-    border-radius: 17px;
-}
+    main {
+        display: flex;
+        height: 100%;
+        width: auto;
+    }
+    /* making the page work for centering the Google logo */
+    body {
+        display: flex;
+        flex-direction: column;
+        /*background-color: gray;*/
+    }
+    #navbar {
+        /*background: yellow;*/
+    }
+    #nav-links {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        /*background: green;*/
+    }
+    #nav-links li a {
+        float: left;
+        padding: 10px;
+    }
+    .nav-right {
+        float: right;
+    }
+    #container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /*background: red;*/
+        width: 100%;
+        height: 500px;
+        margin-bottom: 0px;  
+    }
+    #search-bar {
+        /*background: blue;*/
+    }
+    #search {
+        
+        /*position: absolute;
+        bottom: 420px;
+        left: 515px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        height: 50px;
+        width: 400px;
+        border-radius: 17px;*/
+    }
 </style>
 <body>
     <head>
@@ -64,7 +70,7 @@ body {
     </head>
     <main>
         <div id="container">
-            <div id="google-logo"></div>
+            <div id="google-logo">
                 <img src="http://web.archive.org/web/20191201000239im_/https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
             </div>
             <div id="search-bar">
