@@ -43,16 +43,20 @@
         /*background: blue;*/
     }
     #search {
-        
         /*position: absolute;
         bottom: 420px;
         left: 515px;
         display: flex;
         margin-left: auto;
-        margin-right: auto;
+        margin-right: auto;*/
         height: 50px;
         width: 400px;
-        border-radius: 17px;*/
+        border-radius: 17px;
+    }
+    #buttons {
+        height: 50px;
+        width: 400px;
+        padding-bottom: 0;
     }
 </style>
 <body>
@@ -71,12 +75,16 @@
     <main>
         <div id="container">
             <div id="google-logo">
-                <img src="http://web.archive.org/web/20191201000239im_/https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
             </div>
             <div id="search-bar">
                 <form> 
                     <input id="search" type="text">
                 </form>
+            </div>
+            <div id="buttons">
+                <button id="google-search" type="submit" class="two-buttons">Google Search</button>
+                <button id="im-feeling-lucky" type="submit" class="two-buttons">I'm Feeling Lucky</button>
             </div>
         </div>
     </main>      
