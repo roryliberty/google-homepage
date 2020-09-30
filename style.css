@@ -1,35 +1,99 @@
-
+main {
+    display: flex;
+    height: 100%;
+    width: auto;
+}
 /* making the page work for centering the Google logo */
 body {
     display: flex;
     flex-direction: column;
-    background-color: gray;
 }
-#navbar {
-    background: yellow;
+#navbar-container {
+    font-size: 15px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
-#nav-links {
+#nav-links-left, #nav-links-right {
     list-style-type: none;
-    margin: 0;
+    margin-top: 0;
     padding: 0;
-    background: green;
 }
-#nav-links li a {
+.nav-left {
     float: left;
     padding: 10px;
 }
 .nav-right {
     float: right;
+    padding: 10px;
 }
-#container {
+#main-container {
+    position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column; 
-    background: red;
     width: 100%;
-    height: 500px;  
+    height: 500px;
+    margin-bottom: 0px;  
 }
-#search-bar {
-    background: blue;
-}
+    /*Making the search bar look pretty*/
+    #search {
+        height: 50px;
+        width: 400px;
+        border-radius: 34px;
+    }
+    /*Moving buttons into position and resizing*/
+    #buttons {
+        height: 50px;
+        width: 400px;
+        padding-top: 25px;
+        padding-left: 110px;
+    }
+    /*putting a little space between the buttons*/
+    .button-class {
+        margin: 10px;
+        height: 50px;
+    }
+    #footer-container {
+        background: rgb(212, 211, 211);
+        position: fixed;
+        display: flex;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        font-size: 15px;
+    }
+    #footer-left, #footer-right, #navbar-left, #navbar-right {
+        width: 50%;
+        height: auto;
+    }
+    #footer-links-left, #footer-links-right {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .footer-right {
+        float: right;
+        padding: 10px;
+    }
+    .footer-left {
+        float: left;
+        padding: 10px;
+    }
+    a:link {
+        text-decoration: none;
+        color: black;
+    }
+    #sign-in-button {
+        background-color: rgb(60, 106, 192);
+        color: white;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10%;
+        width: 100px;
+        font-size: 15px;
+    }
